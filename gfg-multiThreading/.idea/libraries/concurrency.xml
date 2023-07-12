@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="concurrency">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../java/concurrency/out/artifacts/concurrency_jar2/concurrency.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
