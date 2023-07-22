@@ -28,6 +28,11 @@ public class ProductService {
     }
 
 
+    public int createProduct(Product product){
+       int rowAffected =  productDAO.createProduct(product);
+       return  rowAffected;
+    }
+
 
     public Product createProducts(Product product){
         product.setId(nextId);
@@ -50,7 +55,8 @@ public class ProductService {
 
     //using db
     public Product getById(Integer id){
-        Product product = productDAO.getProductById(id);
+//        Product product = productDAO.getProductById(id);
+        Product product = productDAO.getProductByIdWithPS(id);
         return product;
     }
 

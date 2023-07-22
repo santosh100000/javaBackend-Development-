@@ -65,6 +65,12 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 
+    @PostMapping("/addProducts")
+    public ResponseEntity<Integer>  createProducts(@RequestBody Product product){
+      Integer rowAffected =   productService.createProduct(product);
+        return ResponseEntity.ok(rowAffected);
+    }
+
 
 
 
