@@ -16,7 +16,7 @@ public class ProductService {
         List<Product> list = new ArrayList<>();
         list.add(new Product(12, "macbook", 3600));
         list.add(new Product( 23,"laptop", 3600));
-        list.add(new Product(1661, "Car", 10000));
+        list.add(new Product(1661,  "Car", 10000));
         return list;
     }
 }
