@@ -1,2 +1,4 @@
-package lombok;public class Product {
+package lombok;
+
+public class Product {
 }

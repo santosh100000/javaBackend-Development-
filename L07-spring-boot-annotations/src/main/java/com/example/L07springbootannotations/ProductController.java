@@ -22,6 +22,11 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+//    public ProductController(KeywordAnalyzerInterface keywordAnalyzerInterface, ProductService productService) {
+//        this.keywordAnalyzerInterface = keywordAnalyzerInterface;
+//        this.productService = productService;
+//    }
+
     @GetMapping("/allProducts")
     public ResponseEntity<List<Product>>  getAllProducts(){
         List<Product> products = productService.getAllProducts();
