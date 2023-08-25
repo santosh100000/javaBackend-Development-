@@ -1,7 +1,7 @@
-package com.example.L14springsecuritydemo;
+package com.example.L14springsecuritydemo.service;
 
+import com.example.L14springsecuritydemo.entity.Product;
 import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class ProductService {
     private Long apiWaitTime;
 
 
-    private Map<Long,Product> dataStore = new HashMap<>();
+    private Map<Long, Product> dataStore = new HashMap<>();
 
      private Long nextId = 0l;
 

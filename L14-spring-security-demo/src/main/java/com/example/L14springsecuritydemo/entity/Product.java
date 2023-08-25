@@ -1,4 +1,4 @@
-package com.example.L14springsecuritydemo;
+package com.example.L14springsecuritydemo.entity;
 
 import lombok.Data;
 

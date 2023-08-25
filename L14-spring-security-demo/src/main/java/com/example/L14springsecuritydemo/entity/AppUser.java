@@ -1,4 +1,4 @@
-package com.example.L14springsecuritydemo;
+package com.example.L14springsecuritydemo.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -22,14 +22,14 @@ public class AppUser implements UserDetails {
     @Column(unique = true)
     private  String username;
     private  String password;
-    private String roles;
+    private String role;
 
 
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> list = new ArrayList<>();
-        list.add(new SimpleGrantedAuthority(roles));
+        list.add(new SimpleGrantedAuthority(role));
         return list;
     }
 
